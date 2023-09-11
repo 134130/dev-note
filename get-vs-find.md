@@ -56,7 +56,7 @@ C#은 많은 Collection API를 언어적 레벨에서 제공하고 있으며, �
   > ```
   > 위의 경우 `true`인 경우에만 value를 사용해야하며, `false`인 경우는 value를 사용해서는 안된다. 때문에 `TValue`는 non-null 이다.
 
-- `GetValueOrDefault`는 `TValue?`를 리턴한다. ([CollectionExtensions.GetValueOrDefault](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.collectionextensions.getvalueordefault?view=net-7.0))\
+- `GetValueOrDefault`는 `TValue?`를 리턴한다. ([CollectionExtensions.GetValueOrDefault](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.collectionextensions.getvalueordefault?view=net-7.0))
   ```csharp
   public static TValue? GetValueOrDefault<TKey,TValue> (
       this System.Collections.Generic.IReadOnlyDictionary<TKey,TValue> dictionary,
@@ -80,5 +80,5 @@ get / find 컨벤션을 잘 지킨다면, `getElementOrThrowIfNotExists`, `getEl
 
 ## Related
 - https://tuhrig.de/find-vs-get/
-- [좋은 함수 만들기 - Null 을 다루는 방법](https://jojoldu.tistory.com/721)https://jojoldu.tistory.com/721
+- [좋은 함수 만들기 - Null 을 다루는 방법](https://jojoldu.tistory.com/721)
 - [Number와 boolean 은 최대한 Not Null로 선언하기](https://jojoldu.tistory.com/718)
